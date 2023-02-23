@@ -1,0 +1,73 @@
+import bcrypt from 'bcryptjs';
+
+const data = {
+  users: [
+    {
+      name: 'Gertrude',
+      email: 'admin@example.com',
+      password: bcrypt.hashSync('123456'),
+      isAdmin: true,
+    },
+    {
+      name: 'John',
+      email: 'user@example.com',
+      password: bcrypt.hashSync('123456'),
+      isAdmin: false,
+    },
+  ],
+  products: [
+    {
+      _id: '1',
+      name: 'Book1',
+      slug: 'book-1',
+      category: 'Books',
+      image: '/images/p1.jpg',
+      price: 12,
+      countInStock: 10,
+      brand: '700',
+      rating: 4.0,
+      numReviews: 5,
+      description: 'interesting book',
+    },
+    {
+      _id: '2',
+      name: 'Book2',
+      slug: 'book-2',
+      category: 'Books',
+      image: '/images/p2.jpg',
+      price: 15,
+      countInStock: 0,
+      brand: '700',
+      rating: 4.9,
+      numReviews: 20,
+      description: 'interesting book',
+    },
+    {
+      _id: '3',
+      name: 'Book3',
+      slug: 'book-3',
+      category: 'Books',
+      image: '/images/p3.jpg',
+      price: 20,
+      countInStock: 15,
+      brand: '700',
+      rating: 3.0,
+      numReviews: 10,
+      description: 'interesting book',
+    },
+    {
+      _id: '4',
+      name: 'Book4',
+      slug: 'book-4',
+      category: 'Books',
+      image: '/images/p4.jpg',
+      price: 10,
+      countInStock: 5,
+      brand: '700',
+      rating: 4.5,
+      numReviews: 10,
+      description: 'interesting book',
+    },
+  ],
+};
+export default data;
